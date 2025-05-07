@@ -1,14 +1,5 @@
 {
-  "builds": [
-    {
-      "src": "api/daily_rotation.py",
-      "use": "@vercel/python"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/DailyRotationData",
-      "dest": "api/daily_rotation.py"
-    }
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/api/index" }
   ]
 }
