@@ -1,8 +1,6 @@
 import datetime
 from flask import Flask, request, jsonify
 import requests
-from werkzeug.datastructures import headers
-from datetime import datetime, timedelta
 
 class GameSettings:
     def __init__(self):
